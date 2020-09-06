@@ -15,3 +15,10 @@ community I am working in...
    - [My Telegram](https://t.me/sochiquzmanager)
    - By calling to: 91 449 01 33
    - e.normudov@mail.ru
+
+### Skills
+
+- Exceptional communication and networking skills;
+- Successful working in a team environment, as well as independently;
+- The ability to work under pressure and multi-task;
+- The ability to follow instructions and deliver quality results;
