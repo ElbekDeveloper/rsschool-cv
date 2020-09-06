@@ -81,3 +81,10 @@ public class SqlConnection : ISqlConnection
 
 I have done a bunch of portfolio task. Please visit my web-page for that:
 [Click Me!](elbek.engineer)
+
+### Education
+
+- Graduated RSSchool: SEP 2019 - FEB 2020 (No Certificate );
+- Completed the first course of Web Development For Everyone (WDFE) Course by Michigan University offered exclusively for international students by Coursera Platform;
+- Have competed C# programming language tutorial offered exclusively for international students by CodeCademy Platform
+- Studying at Westminster International University in Tashkent (2018-2022);
