@@ -25,7 +25,10 @@ community I am working in...
 
 ### Code Examples
 
-```C#
+The code below ensures that all types are registered for further use via dependency injection.
+The project helped to practice **SOLID** principles
+
+```csharp
 builder.RegisterType<InputService>().As<IInputService>();
 builder.RegisterType<SqlConnectionAs<ISqlConnection>();
 builder.RegisterType<TokenServiceAs<ITokenService>();
@@ -37,5 +40,33 @@ builder.RegisterType<DeleteRowFeature().As<IDeleteRow>();
 
 ```
 
-The code above ensures that all types are registered for further use via dependency injection.
-The project helped to practice **SOLID** principles
+One more peace of code to document _sql connection_
+
+```csharp
+public interface ISqlConnection
+    {
+        void Close();
+        void Open();
+        NpgsqlConnection GetConnection();
+    }
+```
+
+```csharp
+public class SqlConnection : ISqlConnection
+  {
+      private NpgsqlConnection connection;
+      public SqlConnection()
+      {
+          connection = new NpgsqlConnectio(Database.GetConnectionString());
+      }
+      public void Close()
+      {
+          connection.Close();
+      }
+      public void Open()
+      {
+          connection.Open();
+      }
+      public NpgsqlConnection GetConnection()=> connection;
+  }
+```
