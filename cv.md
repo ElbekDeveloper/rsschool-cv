@@ -22,3 +22,20 @@ community I am working in...
 - Successful working in a team environment, as well as independently;
 - The ability to work under pressure and multi-task;
 - The ability to follow instructions and deliver quality results;
+
+### Code Examples
+
+```C#
+builder.RegisterType<InputService>().As<IInputService>();
+builder.RegisterType<SqlConnectionAs<ISqlConnection>();
+builder.RegisterType<TokenServiceAs<ITokenService>();
+builder.RegisterType<SumCalculatorAs<ISumCalculator>();
+builderRegisterType<CounterAgentInserterAs<ICounterAgentInserter>();
+builder.RegisterType<StandardMessages().As<IStandardMessages>();
+builder.RegisterType<SearchFeatureAs<ISearchFeature>();
+builder.RegisterType<DeleteRowFeature().As<IDeleteRow>();
+
+```
+
+The code above ensures that all types are registered for further use via dependency injection.
+The project helped to practice **SOLID** principles
