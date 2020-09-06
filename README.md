@@ -1,3 +1,3 @@
 # rsschool-cv
 
-[Click me!]()
+[Click me!](https://elbekdeveloper.github.io/rsschool-cv/cv)
