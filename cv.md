@@ -78,3 +78,6 @@ public class SqlConnection : ISqlConnection
 | Freelancer                |     Self-employed      |  MAY 2020 - AUG 2020  | Developed Pharmacy Inventory Management System |
 | Software Developer Intern |      ZetSoft LLC       | FEB 2020 - MARCH 2020 |  Tested the project that was under development |
 | IELTS instructor          | Active English Courses |  DEC 2016 - SEP 2018  |                        Delivered IELTS lessons |
+
+I have done a bunch of portfolio task. Please visit my web-page for that:
+[Click Me!](elbek.engineer)
