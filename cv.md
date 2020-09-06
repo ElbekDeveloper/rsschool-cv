@@ -70,3 +70,11 @@ public class SqlConnection : ISqlConnection
       public NpgsqlConnection GetConnection()=> connection;
   }
 ```
+
+### Experience
+
+| Position                  |        Company         |        Period         |                           **What I have done** |
+| :------------------------ | :--------------------: | :-------------------: | ---------------------------------------------: |
+| Freelancer                |     Self-employed      |  MAY 2020 - AUG 2020  | Developed Pharmacy Inventory Management System |
+| Software Developer Intern |      ZetSoft LLC       | FEB 2020 - MARCH 2020 |  Tested the project that was under development |
+| IELTS instructor          | Active English Courses |  DEC 2016 - SEP 2018  |                        Delivered IELTS lessons |
