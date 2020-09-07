@@ -48,6 +48,10 @@
       </div>
     </main>
     <section class="container" id="code-examples">
+      <p>
+        The code below ensures that all types are registered for further use via
+        dependency injection. The project helped to practice SOLID principles
+      </p>
       <code>
         <pre class="code">
 builder.RegisterType&LeftAngleBracket;InputService&RightAngleBracket;().As&LeftAngleBracket;IInputService&RightAngleBracket;();
@@ -58,6 +62,39 @@ builderRegisterType&LeftAngleBracket;CounterAgentInserterAs&LeftAngleBracket;ICo
 builder.RegisterType&LeftAngleBracket;StandardMessages().As&LeftAngleBracket;IStandardMessages&RightAngleBracket;();
 builder.RegisterType&LeftAngleBracket;SearchFeatureAs&LeftAngleBracket;ISearchFeature&RightAngleBracket;();
 builder.RegisterType&LeftAngleBracket;DeleteRowFeature().As&LeftAngleBracket;IDeleteRow&RightAngleBracket;();</pre
+        >
+      </code>
+      <p>One more peace of code to document sql connection</p>
+      <code>
+        <pre class="code">
+    public interface ISqlConnection
+        {
+        void Close();
+        void Open();
+        NpgsqlConnection GetConnection();
+        }</pre
+        >
+      </code>
+      <p>Below is the implementation of above-given code snippet</p>
+      <code>
+        <pre class="code">
+    public class SqlConnection : ISqlConnection
+        {
+        private NpgsqlConnection connection;
+        public SqlConnection()
+        {
+        connection = new NpgsqlConnectio(Database.GetConnectionString());
+        }
+        public void Close()
+        {
+        connection.Close();
+        }
+        public void Open()
+        {
+        connection.Open();
+        }
+        public NpgsqlConnection GetConnection()=> connection;
+        }</pre
         >
       </code>
     </section>
