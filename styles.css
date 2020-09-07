@@ -69,7 +69,9 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
 }
-
+.main--pic {
+    width: 150px;
+}
 .body {
     /* Positioning */
     margin: 0;
