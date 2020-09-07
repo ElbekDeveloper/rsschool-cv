@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>HTML, CSS & Git Basics</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="main-heading">Elbek's Resume</h1>
+    </header>
+    <main class="main container">
+      <div>
+        <h3>Basic info</h3>
+        <img
+          src="./assets/profile_pic.jpg"
+          alt="My Picture"
+          class="main--pic"
+        />
+        <p>Elbek Normurodov</p>
+        <p>(ElbekDeveloper)</p>
+      </div>
+      <div>
+        <h3>Skills</h3>
+        <ul>
+          <li>Exceptional communication and networking skills;</li>
+          <li>
+            Successful working in a team environment, as well as independently;
+          </li>
+          <li>The ability to work under pressure and multi-task;</li>
+          <li>
+            The ability to follow instructions and deliver quality results;
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Code Examples</h3>
+        <a href="#code-examples" class="btn">&downarrow;</a>
+      </div>
+      <div>
+        <h3>Education</h3>
+
+        <ul>
+          <li>RSSchool: SEP 2019 - FEB 2020 (No Certificate );</li>
+          <li>C# Programming - CodeCademy Pro</li>
+          <li>Web Development For Everyone (WDFE) - Michigan University</li>
+          <li>
+            Bachelor's - Westminster International University in Tashkent
+            (2018-2022)
+          </li>
+          <li>IELTS Band <strong>8</strong></li>
+        </ul>
+      </div>
+    </main>
+    <section class="container" id="code-examples">
+      <p>
+        The code below ensures that all types are registered for further use via
+        dependency injection. The project helped to practice SOLID principles
+      </p>
+      <code>
+        <pre class="code">
+builder.RegisterType&LeftAngleBracket;InputService&RightAngleBracket;().As&LeftAngleBracket;IInputService&RightAngleBracket;();
+builder.RegisterType&LeftAngleBracket;SqlConnectionAs&LeftAngleBracket;ISqlConnection&RightAngleBracket;();
+builder.RegisterType&LeftAngleBracket;TokenServiceAs&LeftAngleBracket;ITokenService&RightAngleBracket;();
+builder.RegisterType&LeftAngleBracket;SumCalculatorAs&LeftAngleBracket;ISumCalculator&RightAngleBracket;();
+builderRegisterType&LeftAngleBracket;CounterAgentInserterAs&LeftAngleBracket;ICounterAgentInserter&RightAngleBracket;();
+builder.RegisterType&LeftAngleBracket;StandardMessages().As&LeftAngleBracket;IStandardMessages&RightAngleBracket;();
+builder.RegisterType&LeftAngleBracket;SearchFeatureAs&LeftAngleBracket;ISearchFeature&RightAngleBracket;();
+builder.RegisterType&LeftAngleBracket;DeleteRowFeature().As&LeftAngleBracket;IDeleteRow&RightAngleBracket;();</pre
+        >
+      </code>
+      <p>One more peace of code to document sql connection</p>
+      <code>
+        <pre class="code">
+    public interface ISqlConnection
+        {
+        void Close();
+        void Open();
+        NpgsqlConnection GetConnection();
+        }</pre
+        >
+      </code>
+      <p>Below is the implementation of above-given code snippet</p>
+      <code>
+        <pre class="code">
+    public class SqlConnection : ISqlConnection
+        {
+        private NpgsqlConnection connection;
+        public SqlConnection()
+        {
+        connection = new NpgsqlConnectio(Database.GetConnectionString());
+        }
+        public void Close()
+        {
+        connection.Close();
+        }
+        public void Open()
+        {
+        connection.Open();
+        }
+        public NpgsqlConnection GetConnection()=> connection;
+        }</pre
+        >
+      </code>
+    </section>
+    <footer class="footer">
+      <span>Made with &hearts;</span>
+      <p>
+        Please, visit:
+        <a target="blank" href="https://www.elbek.engineer">my website</a>,
+        <a target="blank" href="https://github.com/ElbekDeveloper/"
+          >my GitHub profile</a
+        >,
+        <a target="blank" href="https://www.youtube.com/DasturlashniOrganamiz"
+          >my YouTube channel</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
