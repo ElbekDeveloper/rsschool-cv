@@ -90,14 +90,50 @@ h3 {
 }
 
 .main {
-    display: grid;
-    flex-grow: 1;
+    /* Positioning */
     margin: 0 auto;
-    width: 1024px;
+    padding: 1em;
+    /* Box-model */
+    display: grid;
+    grid-template-columns: auto;
+    flex-grow: 1;
+    max-width: 1024px;
+    justify-items: stretch;
+    align-items: stretch;
+    /* Typography */
+    /* Visual */
+    /* Misc */
 }
+
+.main > div {
+    /* Positioning */
+    /* Box-model */
+    padding: 1em;
+    /* Typography */
+    /* Visual */
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+    /* Misc */
+}
+
+.main > div:hover {
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 255, 255, 1);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 255, 255, 1);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 255, 255, 1);
+}
+
+@media (min-width: 800px) {
+    .main {
+        grid-template-columns: auto auto;
+    }
+}
+
 /* Make focus mode */
 .header:hover,
-.footer:hover {
+.footer:hover,
+.main > div:hover {
     background: var(--clr-dark);
     color: var(--clr-light);
 }
