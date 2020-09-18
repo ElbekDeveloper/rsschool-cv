@@ -2,11 +2,8 @@
 
 ### .Net Developer
 
-Extremely motivated to
-constantly develop my skills
-and grow professionally. My
-aim to contribute on the
-community I am working in...
+Extremely motivated to constantly develop my skills and grow professionally. My
+aim to contribute on the community I am working in...
 
 #### Basic Info
 
@@ -25,8 +22,8 @@ community I am working in...
 
 ### Code Examples
 
-The code below ensures that all types are registered for further use via dependency injection.
-The project helped to practice **SOLID** principles
+The code below ensures that all types are registered for further use via
+dependency injection. The project helped to practice **SOLID** principles
 
 ```csharp
 builder.RegisterType<InputService>().As<IInputService>();
@@ -85,8 +82,11 @@ I have done a bunch of portfolio task. Please visit my web-page for that:
 ### Education
 
 - Graduated RSSchool: SEP 2019 - FEB 2020 (No Certificate );
-- Completed the first course of Web Development For Everyone (WDFE) Course by Michigan University offered exclusively for international students by Coursera Platform;
-- Have competed C# programming language tutorial offered exclusively for international students by CodeCademy Platform
+- Completed the first course of Web Development For Everyone (WDFE) Course by
+  Michigan University offered exclusively for international students by Coursera
+  Platform;
+- Have competed C# programming language tutorial offered exclusively for
+  international students by CodeCademy Platform
 - Studying at Westminster International University in Tashkent (2018-2022);
 
 ### English
